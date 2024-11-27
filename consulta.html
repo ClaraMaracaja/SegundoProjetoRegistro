@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Exercícios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Consulta de Exercícios</h1>
+
+<div id="pesquisa">
+    <h2>Pesquisar Exercícios</h2>
+    <label for="pesquisa-tipo-input">Nome:</label>
+    <input type="text" id="pesquisa-tipo-input" placeholder="Digite o nome do exercício...">
+
+    <label for="pesquisa-data-input">Data:</label>
+    <input type="text" id="pesquisa-data-input" placeholder="dd/mm/yyyy">
+
+    <button id="pesquisar-btn">Pesquisar</button>
+</div>
+
+<div id="exercicio-lista">
+    <h2>Lista de Exercícios Cadastrados</h2>
+    <p id="contagem-exercicios">Total de Exercícios: 0</p>
+    <table id="tabela-exercicios">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Data</th>
+                <th>Duração (min)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<div id="navigation-buttons">
+    <a href="cadastro.html">Ir para Cadastro</a>
+</div>
+
+<script src="script-consulta.js"></script>
+</body>
+</html>

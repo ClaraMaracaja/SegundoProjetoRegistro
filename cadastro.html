@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Exercícios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Cadastro de Exercícios</h1>
+<form id="form-exercicios">
+    <label for="nome">Nome do Exercício:</label>
+    <input type="text" id="nome" required>
+
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" required style="height: 100px;"></textarea>
+
+    <label for="data">Data (dd/mm/yyyy):</label>
+    <input type="text" id="data" required placeholder="dd/mm/yyyy">
+
+    <label for="duracao">Duração (min):</label>
+    <input type="number" id="duracao" required min="1">
+
+    <button type="submit">Cadastrar Exercício</button>
+</form>
+
+<p id="erro-msg" style="color: red; display: none;"></p>
+
+<div id="navigation-buttons">
+    <a href="consulta.html">Ir para Consulta</a>
+</div>
+
+<script src="script-cadastro.js"></script>
+</body>
+</html>
